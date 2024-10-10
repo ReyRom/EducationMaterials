@@ -75,3 +75,5 @@ body:
     attributes:
       label: Пожалуйста, прикрепите файл
       description: Загрузите файл, перетащив его сюда после создания задачи или выберите его вручную.
+    validations:
+      required: false
