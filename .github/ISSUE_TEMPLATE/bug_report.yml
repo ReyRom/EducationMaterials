@@ -1,5 +1,5 @@
-name: 🐛Bug Report
-description: File a bug report here
+name: 🐛Отчёт о дефекте
+description: Отправьте отчёт о дефекте здесь
 title: "[BUG]: "
 labels: ["bug"]
 assignees: ["ReyRom"]
@@ -7,41 +7,71 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!!!
+        Спасибо, что нашли время заполнить этот отчёт о дефекте!
   - type: checkboxes
     id: new-bug
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      label: Существует ли уже отчет по этой проблеме?
+      description: Пожалуйста, проверьте, есть ли уже отчет о проблеме, которую вы обнаружили.
       options:
-      - label: I have searched the existing issues
+      - label: Я проверил существующие отчеты о проблемах
         required: true
   - type: textarea
     id: bug-description
     attributes:
-      label: Description of the bug
-      description: Tell us what bug you encountered and what should have happened
+      label: Описание ошибки
+      description: Расскажите, какую ошибку вы обнаружили и как должно было быть
     validations:
       required: true
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: Please write the steps in a list form
+      label: Шаги для воспроизведения
+      description: Шаги для воспроизведения ошибки.
+      placeholder: Пожалуйста, укажите шаги в виде списка
+    validations:
+      required: true
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Ожидаемый результат
+      description: Ожидаемый результат работы программы.
+      placeholder: Пожалуйста, укажите шаги в виде списка
+    validations:
+      required: true
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Фактический результат 
+      description: Фактический результат работы программы.
+      placeholder: Пожалуйста, укажите шаги в виде списка
     validations:
       required: true
   - type: dropdown
-    id: versions
+    id: importance
     attributes:
-      label: Which version of the app are you using?
-      description: If this issue is occurring on more than 1 version of the app, select the appropriate versions.
-      multiple: true
+      label: Серьезность
+      description: Укажите серьезность ошибки
       options:
-       - 1.0.0
-       - 1.1.0
-       - 1.2.0
-       - 2.0.0
-       - 2.1.0
+       - Критическая
+       - Высокая
+       - Средняя
+       - Низкая
     validations:
       required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоритет
+      description: Укажите приоритетность исправления ошибки
+      options:
+       - Высокий
+       - Средний
+       - Низкий
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Пожалуйста, прикрепите файл
+        Загрузите файл, перетащив его сюда после создания задачи или выберите его вручную.
