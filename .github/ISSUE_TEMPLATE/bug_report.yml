@@ -71,7 +71,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expected-result
+    id: files
     attributes:
       label: Пожалуйста, прикрепите файл
       description: Загрузите файл, перетащив его сюда после создания задачи или выберите его вручную.
