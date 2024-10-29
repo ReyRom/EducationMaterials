@@ -1,0 +1,46 @@
+
+
+Логический тип
+```csharp
+//System.Boolean
+bool isTrue = true;
+bool isFalse = false;
+```
+
+Целочисленные типы
+
+```csharp
+//System.Int32
+int number;
+//System.UInt32
+uint uNumber;
+
+//System.Int16
+short sNumber;
+//System.UInt16
+ushort usNumber;
+
+//System.Int64
+long lNumber;
+//System.UInt64
+ulong ulNumber;
+
+//System.Byte
+byte byteNumber;
+//System.SByte
+sbyte sbyteNumber;
+```
+
+Вещественные типы
+
+```csharp
+float f;
+//System.Single
+
+double d;
+//System.Double
+
+decimal c;
+//System.Decimal
+
+```
